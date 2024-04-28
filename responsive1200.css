@@ -1,0 +1,17 @@
+@media screen and (min-width: 1200px) {
+  .slider-element {
+    height: 400px;
+  }
+  .slider-title {
+    font-size: 30px;
+    width: 450px;
+  }
+  .slider-element li img {
+    width: 1150px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .filter-container .filter-elements {
+    width: 1150px;
+  }
+}

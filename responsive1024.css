@@ -1,0 +1,176 @@
+@media screen and (min-width: 1024px) {
+  /* --------------hamburger------------- */
+  .hamburger-element i {
+    display: none;
+  }
+  .navbar-right-side {
+    display: none;
+  }
+  .login {
+    display: flex;
+    background-color: #b0c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(200, 71, 212);
+    transition: width 0.3s ease;
+    z-index: 1;
+  }
+  .login:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  .login p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    z-index: 1;
+  }
+  .login i {
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+  }
+  .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu-list li {
+    transition: all 0.3s ease;
+  }
+  .menu-list li:hover {
+    transform: scale(1.1);
+  }
+  .menu-list li a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 0 10px;
+  }
+  .menu-list li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .menu-list li a:hover::after {
+    width: 100%;
+  }
+  /* --------------slider------------- */
+  .slider-element {
+    height: 400px;
+  }
+  .slider-title {
+    font-size: 24px;
+    width: 400px;
+  }
+  .slider-element li img {
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+  }
+  /* --------------filter------------- */
+  .filter-container {
+    height: 196px;
+  }
+  .filter-container .filter-elements {
+    top: -4px;
+    width: 1000px;
+    height: 200px;
+  }
+  .filter-container .filter-elements .add-cars-texts {
+    flex-direction: unset;
+    align-items: center;
+  }
+  .filter-container .filter-elements .add-cars-texts p {
+    width: 60%;
+    text-align: start;
+    font-size: 20px;
+  }
+  .filter-container .filter-elements .add-cars-texts .login-in-add-cars {
+    width: 40%;
+  }
+  .filter-container
+    .filter-elements
+    .add-cars-texts
+    .login-in-add-cars
+    .login-button {
+    width: 150px;
+  }
+  .filter-container
+    .filter-elements
+    .add-cars-texts
+    .login-in-add-cars
+    .login-button
+    span {
+    font-size: 18px;
+  }
+  .filter-container .filter-elements .input-elements {
+    flex-direction: unset;
+  }
+  .filter-container .filter-elements .input-elements .marka-element,
+  .model-element {
+    width: 25%;
+  }
+  .filter-container .filter-elements .input-elements #marka,
+  #model {
+    width: 100%;
+    border-radius: unset;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .filter-container .filter-elements .input-elements #model {
+    border: 1px solid black;
+    border-left: unset;
+    border-right: unset;
+  }
+  .filter-container .filter-elements .input-elements .price-elements {
+    width: 25%;
+  }
+  .filter-container .filter-elements .input-elements .price-elements input {
+    border: 1px solid black;
+  }
+  .filter-container .filter-elements .input-elements .submit-button {
+    width: 25%;
+    position: unset;
+    border-radius: unset;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  .filter-container .filter-elements .input-elements .submit-button:hover {
+    background-color: rgb(200, 71, 212);
+  }
+  /* -------------------cards---------------- */
+  .cards-container {
+    top: 250px;
+  }
+  .cards-element,
+  .selected-container {
+    justify-content: center;
+  }
+}
