@@ -6,7 +6,8 @@
   .navbar-right-side {
     display: none;
   }
-  .login {
+  .login,
+  .user1 {
     display: flex;
     background-color: #b0c;
     padding: 10px 20px;
@@ -16,7 +17,11 @@
     position: relative;
     overflow: hidden;
   }
-  .login::before {
+  .user-in-desktop {
+    position: relative;
+  }
+  .login::before,
+  .user1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -27,21 +32,51 @@
     transition: width 0.3s ease;
     z-index: 1;
   }
-  .login:hover::before {
+  .login:hover::before,
+  .user1:hover::before {
     width: 100%;
     right: auto;
     left: 0;
   }
-  .login p {
+  .login p,
+  .user-in-desktop p {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     z-index: 1;
   }
-  .login i {
+  .login i,
+  .user-in-desktop i {
     color: white;
     font-size: 16px;
     z-index: 1;
+  }
+  .user-element1 {
+    position: absolute;
+    top: 40px;
+    left: -12px;
+    background-color: black;
+    width: 120px;
+    border-radius: 10px;
+    z-index: 100 !important;
+  }
+  .user-element1 p {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .user-element1 p:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .user-element1 p:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .user-element1 p:hover {
+    background-color: rgb(146, 146, 146);
   }
   .menu-list {
     list-style: none;
@@ -111,22 +146,10 @@
     text-align: start;
     font-size: 20px;
   }
-  .filter-container .filter-elements .add-cars-texts .login-in-add-cars {
-    width: 40%;
-  }
-  .filter-container
-    .filter-elements
-    .add-cars-texts
-    .login-in-add-cars
-    .login-button {
+  .filter-container .filter-elements .add-cars-texts .login-button {
     width: 150px;
   }
-  .filter-container
-    .filter-elements
-    .add-cars-texts
-    .login-in-add-cars
-    .login-button
-    span {
+  .filter-container .filter-elements .add-cars-texts .login-button span {
     font-size: 18px;
   }
   .filter-container .filter-elements .input-elements {
@@ -165,6 +188,128 @@
   .filter-container .filter-elements .input-elements .submit-button:hover {
     background-color: rgb(200, 71, 212);
   }
+  /* -------------------users-add-cars---------------- */
+  .users-add-inputs ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: unset;
+    list-style: none;
+    gap: 30px;
+  }
+  .left-side-element,
+  .right-side-element {
+    width: 50%;
+  }
+  .left-side-element li,
+  .right-side-element li {
+    width: 100%;
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-side-element li select,
+  .right-side-element li select {
+    position: unset;
+    right: unset;
+    top: unset;
+    width: 70%;
+    transform: translateY(0);
+  }
+  .millage-li,
+  .price-li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .millage-li div:first-child,
+  .price-li div:first-child {
+    width: 30%;
+  }
+  .millage-li div:last-child,
+  .price-li div:last-child {
+    width: 70%;
+  }
+  .millage-li div:last-child input[type="millage"] {
+    width: 80%;
+  }
+  .price-li div:last-child input[type="price1"] {
+    width: 75%;
+  }
+  .left-side-element li input[type="millage"],
+  .left-side-element li input[type="price1"] {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: translateY(0);
+  }
+  /* -------millage------- */
+  .left-side-element li label[for="km"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li input[id="km"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li label[for="mil"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li input[id="mil"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  /* -------price------- */
+  .left-side-element li input[id="azn"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li label[for="azn"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li input[id="usd"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  .left-side-element li label[for="usd"] {
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+  /* ---------bottom-side------------ */
+  .bottom-side-element li div:first-child {
+    width: 15%;
+  }
+  .bottom-side-element .situation-elements {
+    width: 50%;
+  }
+  .vin-element label,
+  .add-message-element label {
+    width: 15%;
+  }
+  .vin-element input {
+    width: 25%;
+  }
+  .add-message-element textarea {
+    width: 55%;
+  }
+  /* -------------pictures---------- */
+  .pictures-border {
+    display: flex;
+    flex-direction: unset;
+    padding: 10px;
+  }
+  .pictures-border div:first-child {
+    min-width: 80%;
+  }
   /* -------------------cards---------------- */
   .cards-container {
     top: 250px;
@@ -172,5 +317,21 @@
   .cards-element,
   .selected-container {
     justify-content: center;
+  }
+  /* ------------footer--------- */
+  .footer-part {
+    width: 1000px;
+  }
+  .footer-logo {
+    width: 150px;
+  }
+  .footer-list li a p {
+    font-size: 20px;
+  }
+  .footer-list li a i {
+    font-size: 20px;
+  }
+  .footer-element .footer-list .footer-social a i {
+    font-size: 25px;
   }
 }

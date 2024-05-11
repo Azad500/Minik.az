@@ -14,7 +14,6 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 5000);
 }
-
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerActive = document.querySelector(".hamburger-element");
   const hamburgerClose = document.querySelector(".mobile-list");
@@ -36,8 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const heightContainer = document.querySelector(".filter-elements");
   addCarsTexts.style.display = "none";
   searchCars.addEventListener("click", function () {
-    searchInputs.style.display = "flex";
-    addCarsTexts.style.display = "none";
+    if (userButton.style.display === "flex") {
+      addCarsTexts.style.display = "none";
+      searchInputs.style.display = "flex";
+    } else {
+      addCarsTexts.style.display = "none";
+      searchInputs.style.display = "flex";
+    }
     searchCars.style.setProperty("--searchCars", "100%");
     addCars.style.setProperty("--addCars", "0");
     if (innerWidth < 1024) {
@@ -48,8 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   addCars.addEventListener("click", function () {
-    searchInputs.style.display = "none";
-    addCarsTexts.style.display = "flex";
+    if (userButton.style.display === "flex") {
+      addCarsTexts.style.display = "none";
+      searchInputs.style.display = "none";
+    } else {
+      addCarsTexts.style.display = "flex";
+      searchInputs.style.display = "none";
+    }
     addCars.style.setProperty("--addCars", "100%");
     searchCars.style.setProperty("--searchCars", "0");
     if (innerWidth < 1024) {

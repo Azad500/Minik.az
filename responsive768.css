@@ -11,4 +11,10 @@
   .filter-container .input-elements .submit-button {
     font-size: 18px;
   }
+  .footer-part {
+    width: 700px;
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+  
 }

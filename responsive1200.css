@@ -14,4 +14,8 @@
   .filter-container .filter-elements {
     width: 1150px;
   }
+  /* ------------footer--------- */
+  .footer-part {
+    width: 1190px;
+  }
 }
