@@ -15,7 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://i.pinimg.com/originals/d2/17/eb/d217eb7dcb3f35be2b50966af028df6a.jpg",
       image6:
         "https://www.westcoastexoticcars.com/imagetag/38/42/l/Used-2015-BMW-M4-1610046366.jpg",
-      prices: "42000",
+      carTool1: "Yüngül lehimli disklər",
+      carTool2: "Dəri salon",
+      carTool3: "Mərkəzi qapanma",
+      carTool4: "Oturacaqların ventilyasiyası",
+      carTool5: "ABS",
+      carTool6: "Park radarı",
+      prices: 42000,
       price: "42 000 $",
       marka: "Bmw",
       model: "M4",
@@ -29,35 +35,93 @@ document.addEventListener("DOMContentLoaded", function () {
       color: "Qara",
       fuel: "Benzin",
       description: "2016, 3.0 L, 54 000 km",
+      aboutCar:
+        "Servis mawinidir.Her bir weyi iwlekdir.Qiymete gore narahat etmeyin.Yoxlatdiqdan sonra ne xerci cixsa hemin xercin iki qati avtomobilin qoyulan qiymetinnen cixilacaq.",
+      salerName: "Emin",
+      phoneNumber: "055 555 55 55",
       dates: "04.28.2024",
       date: "28.04.2024",
     },
     {
       id: 2,
       image: "./images/slider/slider2.png",
-      prices: "40000",
+      image1: "",
+      image2: "",
+      image3: "",
+      image4: "",
+      image5: "",
+      image6: "",
+      carTool1: "",
+      carTool2: "",
+      carTool3: "",
+      carTool4: "",
+      prices: 40000,
       price: "40 000 $",
       marka: "Mercedes",
       model: "Cls 63 AMG",
+      year: "2014",
+      millage: "95 000 km",
+      engine: "5.5 L",
+      horsePower: "585",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Ağ",
+      fuel: "Benzin",
       description: "2014, 5.5 L, 95 000 km",
+      aboutCar:
+        "Geniş avtomobil çeşidi,keyfiyyətə zəmanət və rahat rəsmiləşdirmə. Bütun Avtomobillərə İST CARS-da baxa bilərsiniz . ORİJİNAL yürüşü və BOYASIZ olan avtomobilinizi satmaq ,barter etmək və ya satışa çıxarmaq istəyirsinizsə Bizə müraciət edə bilərsiniz !",
+      salerName: "Elmar",
+      phoneNumber: "055 555 55 55",
       dates: "04.22.2024",
       date: "22.04.2024",
     },
     {
       id: 3,
       image: "./images/slider/slider3.png",
-      prices: "55000",
+      image1:
+        "https://i.pinimg.com/736x/37/a3/b3/37a3b37177eb9f3122a2e09f19d7c6dc.jpg",
+      image2:
+        "https://64.media.tumblr.com/10f3821b7526dfa51ed896c117add085/tumblr_pnyqebD0FS1qegypo_1280.jpg",
+      image3:
+        "https://64.media.tumblr.com/281db7e525973bdf651422b8bfb94b40/tumblr_po69mx3Ydo1qegypo_1280.jpg",
+      image4: "https://s1.dmcdn.net/v/SAhQu1X-ITTYiwkdR/x1080",
+      image5:
+        "https://www.quattroworld.com/wp-content/uploads/2014/12/news-audi-2015-rs-5-coupe-sport-edition-03.jpg",
+      image6:
+        "https://www.chicagomotorcars.com/imagetag/5909/13/l/Used-2015-Audi-RS5-quattro-S-tronic-Coupe-MSRP-78k-TECHNOLOGY-PACKAGE.jpg",
+      carTool1: "Park radarı",
+      carTool2: "Ksenon lampalar",
+      carTool3: "Kondisioner",
+      carTool4: "Arxa görüntü kamerası",
+      carTool5: "Yağış sensoru",
+      carTool6: "Oturacaqların isidilməsi",
+      carTool7: "ABS",
+      prices: 55000,
       price: "55 000 $",
       marka: "Audi",
       model: "RS5",
-      description: "2018, 3.0 L, 16 000 km",
+      year: "2015",
+      millage: "16 000 km",
+      engine: "3.0 L",
+      horsePower: "450",
+      banType: "kupe",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Boz",
+      fuel: "Benzin",
+      description: "2015, 3.0 L, 16 000 km",
+      aboutCar:
+        "Masin Tam ideal veziyyetdedir!Masinin elektron,mator karopka sisteminde hec bir problem yoxdur,Istenilen Yerde yoxlatdira bilersiz,Hal hazirda hec bir xerc teleb etmir. Masin tam FULL Komplektasiyadir.Masinda vuruq udar ve deyisen detal yoxdur. Masin tam olaraq Idealdir!",
+      salerName: "Sahib",
+      phoneNumber: "055 555 55 55",
       dates: "04.13.2024",
       date: "13.04.2024",
     },
     {
       id: 4,
       image: "./images/slider/slider4.png",
-      prices: "172000",
+      prices: 172000,
       price: "172 000 $",
       marka: "Porsche",
       model: "911",
@@ -68,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 5,
       image: "./images/slider/slider5.png",
-      prices: "135000",
+      prices: 135000,
       price: "135 000 $",
       marka: "Toyota",
       model: "Land Cruiser",
@@ -79,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 6,
       image: "./images/slider/slider6.png",
-      prices: "98000",
+      prices: 98000,
       price: "98 000 $",
       marka: "Lexus",
       model: "LX570",
@@ -90,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 7,
       image: "./images/cards/card15.png",
-      prices: "250000",
+      prices: 250000,
       price: "250 000 AZN",
       marka: "Lexus",
       model: "LX300",
@@ -112,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 9,
       image: "./images/cards/card9.webp",
-      prices: "60000",
+      prices: 60000,
       price: "60 000 $",
       marka: "Bmw",
       model: "X5",
@@ -123,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 10,
       image: "./images/cards/card10.jpeg",
-      prices: "83000",
+      prices: 83000,
       price: "83 000 $",
       marka: "Mercedes",
       model: "G 63 AMG",
@@ -134,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 11,
       image: "./images/cards/card6.jpeg",
-      prices: "110000",
+      prices: 110000,
       price: "110 000 $",
       marka: "Bmw",
       model: "M5",
@@ -145,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 12,
       image: "./images/cards/card5.jpeg",
-      prices: "42000",
+      prices: 42000,
       price: "42 000 $",
       marka: "Bmw",
       model: "M3",
@@ -156,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 13,
       image: "./images/cards/card4.jpeg",
-      prices: "150000",
+      prices: 150000,
       price: "150 000 $",
       marka: "Bmw",
       model: "X7",
@@ -167,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 14,
       image: "./images/cards/card3.jpeg",
-      prices: "130000",
+      prices: 130000,
       price: "130 000 $",
       marka: "Mercedes",
       model: "S 63 AMG",
@@ -178,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 15,
       image: "./images/cards/card2.jpeg",
-      prices: "78000",
+      prices: 78000,
       price: "78 000 $",
       marka: "Mercedes",
       model: "E 63 AMG",
@@ -189,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 16,
       image: "./images/cards/card1.jpeg",
-      prices: "17000",
+      prices: 17000,
       price: "17 000 $",
       marka: "Toyota",
       model: "Corolla",
@@ -200,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 17,
       image: "./images/cards/card11.avif",
-      prices: "41000",
+      prices: 41000,
       price: "41 000 AZN",
       marka: "Toyota",
       model: "Corolla Cross",
@@ -211,7 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 18,
       image: "./images/cards/card12.jpeg",
-      prices: "20000",
+      prices: 20000,
       price: "20 000 $",
       marka: "Toyota",
       model: "Camry",
@@ -222,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 19,
       image: "./images/cards/card13.jpeg",
-      prices: "40000",
+      prices: 40000,
       price: "40 000 $",
       marka: "Toyota",
       model: "Rav4",
@@ -233,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 20,
       image: "./images/cards/card14.jpeg",
-      prices: "85000",
+      prices: 85000,
       price: "85 000 $",
       marka: "Lexus",
       model: "LX450",
@@ -244,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 21,
       image: "./images/cards/card17.jpeg",
-      prices: "11000",
+      prices: 11000,
       price: "11 000 $",
       marka: "Lexus",
       model: "RX330",
@@ -255,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 22,
       image: "./images/cards/card18.jpeg",
-      prices: "57000",
+      prices: 57000,
       price: "57 000 $",
       marka: "Audi",
       model: "RS4",
@@ -266,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 23,
       image: "./images/cards/card19.jpeg",
-      prices: "47000",
+      prices: 47000,
       price: "47 000 $",
       marka: "Audi",
       model: "A6",
@@ -277,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 24,
       image: "./images/cards/card20.jpeg",
-      prices: "77000",
+      prices: 77000,
       price: "77 000 $",
       marka: "Audi",
       model: "A7",
@@ -299,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 26,
       image: "./images/cards/card22.jpeg",
-      prices: "122000",
+      prices: 122000,
       price: "122 000 $",
       marka: "Porsche",
       model: "Panamera",
@@ -310,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 27,
       image: "./images/cards/card23.webp",
-      prices: "107000",
+      prices: 107000,
       price: "107 000 $",
       marka: "Porsche",
       model: "Cayenne",
@@ -321,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 28,
       image: "./images/cards/card24.jpeg",
-      prices: "55000",
+      prices: 55000,
       price: "55 000 $",
       marka: "Porsche",
       model: "Macan",
@@ -332,7 +396,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 29,
       image: "./images/cards/card25.jpeg",
-      prices: "149000",
+      prices: 149000,
       price: "149 000 $",
       marka: "Porsche",
       model: "Cayman",
@@ -343,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 30,
       image: "./images/cards/card26.jpeg",
-      prices: "127000",
+      prices: 127000,
       price: "127 000 $",
       marka: "Bmw",
       model: "M5",
@@ -354,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 31,
       image: "./images/cards/card31.jpeg",
-      prices: "10000",
+      prices: 10000,
       price: "10 000 $",
       marka: "Hyundai",
       model: "Sonata",
@@ -367,7 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 32,
       image: "./images/cards/card32.jpeg",
-      prices: "14000",
+      prices: 14000,
       price: "14 000 $",
       marka: "Mercedes",
       model: "E-Class",
@@ -380,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 33,
       image: "./images/cards/card33.jpeg",
-      prices: "2000",
+      prices: 2000,
       price: "2 000 $",
       marka: "Lada",
       model: "Vaz-2107",
@@ -393,7 +457,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 34,
       image: "./images/cards/card34.jpeg",
-      prices: "5000",
+      prices: 5000,
       price: "5 000 $",
       marka: "Kia",
       model: "Optima",
@@ -406,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 35,
       image: "./images/cards/card37.jpeg",
-      prices: "1500",
+      prices: 1500,
       price: "1500 $",
       marka: "Lada",
       model: "Priora",
@@ -419,7 +483,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 36,
       image: "./images/cards/card38.jpeg",
-      prices: "11000",
+      prices: 11000,
       price: "11 000 $",
       marka: "Hyundai",
       model: "Sonata",
@@ -432,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 37,
       image: "./images/cards/card39.jpeg",
-      prices: "5000",
+      prices: 5000,
       price: "5 000 $",
       marka: "Mercedes",
       model: "E-Class",
@@ -452,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       image: "./images/cards/card35.jpeg",
-      prices: "30",
+      prices: 30,
       price: "30 AZN / Günlük",
       marka: "Opel",
       model: "Astra",
@@ -465,7 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 2,
       image: "./images/cards/card36.jpeg",
-      prices: "150",
+      prices: 150,
       price: "150 AZN / Günlük",
       marka: "Land Rover",
       model: "Range Rover",
@@ -478,7 +542,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 3,
       image: "./images/cards/card40.jpeg",
-      prices: "100",
+      prices: 100,
       price: "100 AZN / Günlük",
       marka: "BMW",
       model: "5 series",
@@ -491,7 +555,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 4,
       image: "./images/cards/card41.jpeg",
-      prices: "70",
+      prices: 70,
       price: "70 AZN / Günlük",
       marka: "Mercedes",
       model: "E-Class",
@@ -504,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 5,
       image: "./images/cards/card42.jpeg",
-      prices: "65",
+      prices: 65,
       price: "65 AZN / Günlük",
       marka: "Hyundai",
       model: "Elantra",
@@ -517,7 +581,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 6,
       image: "./images/cards/card43.jpeg",
-      prices: "160",
+      prices: 160,
       price: "160 AZN / Günlük",
       marka: "Mercedes",
       model: "V-Class",
@@ -530,7 +594,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 6,
       image: "./images/cards/card44.jpeg",
-      prices: "140",
+      prices: 140,
       price: "140 AZN / Günlük",
       marka: "Toyota",
       model: "Camry",
@@ -599,6 +663,11 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
         cardsElement.appendChild(cardElement);
+        // ---------------------cards-click------------
+        cardElement.addEventListener("click", () => {
+          localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+          window.open("cars.html", "_blank");
+        });
       });
     } else if (isNewCardClicked) {
       // ------------------new-cards------------------
@@ -628,6 +697,11 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         `;
         cardsElement.appendChild(cardElement);
+        // ---------------------cards-click------------
+        cardElement.addEventListener("click", () => {
+          localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+          window.open("cars.html", "_blank");
+        });
       });
     } else if (isCrashedCardClicked) {
       // ------------------crash-cards------------------
@@ -652,6 +726,11 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         `;
         cardsElement.appendChild(cardElement);
+        // ---------------------cards-click------------
+        cardElement.addEventListener("click", () => {
+          localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+          window.open("cars.html", "_blank");
+        });
       });
     } else if (isRentCardClicked) {
       // ------------------rent-cards------------------
@@ -673,7 +752,13 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         `;
         cardsElement.appendChild(cardElement);
+        // ---------------------cards-click------------
+        cardElement.addEventListener("click", () => {
+          localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+          window.open("cars.html", "_blank");
+        });
       });
+      // handleAboutUsers;
     } else {
       // ------------------------------------
       itemsToShow.forEach((card) => {
@@ -960,20 +1045,24 @@ document.addEventListener("DOMContentLoaded", function () {
     (filterCards = (e) => {
       e.preventDefault();
       const cardsElement = document.querySelector(".cards-element");
-      const priceMin = document.querySelector("#priceMin").value.toString();
-      const priceMax = document.querySelector("#priceMax").value.toString();
+      const priceMin =
+        parseInt(document.querySelector("#priceMin").value, 10) || 0;
+      const priceMax =
+        parseInt(document.querySelector("#priceMax").value, 10) ||
+        Number.MAX_SAFE_INTEGER;
       const selectedMarka = markaElement.value;
       const selectedModel = modelElement.value;
       selectedContainer.innerHTML = "";
       cardsInformations.forEach((card) => {
+        const cardPrice = parseInt(card.prices, 10);
         if (
           (card.marka === selectedMarka && card.model === selectedModel) ||
           (card.marka === selectedMarka &&
             selectedModel === "Bütün Modellər") ||
           (card.marka === selectedMarka &&
             card.model === selectedModel &&
-            priceMin <= card.prices &&
-            priceMax >= card.prices)
+            priceMin <= cardPrice &&
+            priceMax >= cardPrice)
         ) {
           const selectedLi = document.createElement("li");
           selectedLi.innerHTML = `
@@ -994,6 +1083,11 @@ document.addEventListener("DOMContentLoaded", function () {
           selectedContainer.appendChild(selectedLi);
           selectedContainer.style.display = "flex";
           paginationContainer.style.display = "none";
+          // ---------------------cards-click------------
+          selectedLi.addEventListener("click", () => {
+            localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+            window.open("cars.html", "_blank");
+          });
         } else {
           cardsElement.style.display = "none";
         }
@@ -1003,6 +1097,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ) {
           selectedContainer.style.display = "none";
           cardsElement.style.display = "flex";
+          paginationContainer.style.display = "flex";
         }
       });
     })
@@ -1048,8 +1143,8 @@ function loginFunction() {
           addCarsText.style.display = "none";
           cardContainer.style.display = "none";
           paginationContainer.style.display = "none";
-          document.querySelector(".filter-container").style.height = "1700px";
-          document.querySelector(".filter-elements").style.height = "1700px";
+          document.querySelector(".filter-container").style.height = "1750px";
+          document.querySelector(".filter-elements").style.height = "1750px";
         });
       }
       if (searchCars.addEventListener) {
@@ -1099,8 +1194,8 @@ entrySubmitButton.addEventListener("click", () => {
         addCarsText.style.display = "none";
         cardContainer.style.display = "none";
         paginationContainer.style.display = "none";
-        document.querySelector(".filter-container").style.height = "1000px";
-        document.querySelector(".filter-elements").style.height = "1000px";
+        document.querySelector(".filter-container").style.height = "1050px";
+        document.querySelector(".filter-elements").style.height = "1050px";
       });
     }
     if (searchCars.addEventListener) {

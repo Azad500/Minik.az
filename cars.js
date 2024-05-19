@@ -55,11 +55,85 @@ document.querySelector(".phone-container").addEventListener("click", () => {
 });
 
 // ----------localstorage-get-method---------
-// LocalStorage'den 'myArray' adlı veriyi al
-var arrayString = localStorage.getItem("cardInfo-1");
 
-if (arrayString) {
-  var myArray = JSON.parse(arrayString);
-  console.log(myArray);
-} else {
+function updateCarDetails(cardNumber) {
+  const key = `cardInfo-${cardNumber}`;
+
+  const carDataString = localStorage.getItem(key);
+
+  if (carDataString) {
+    const carData = JSON.parse(carDataString);
+
+    const carMarka = document.querySelector(".cars-name p:first-child");
+    const carModel = document.querySelector(".cars-name p:last-child");
+    const salerName = document.querySelector(".user-elements span");
+    const phoneNumber = document.querySelector(".blur-element");
+    const carDate = document.querySelector(".date");
+    const carsMarka = document.querySelector(".cars-marka");
+    const carsModel = document.querySelector(".cars-model");
+    const carsYear = document.querySelector(".cars-year");
+    const carsMillage = document.querySelector(".cars-millage");
+    const carsEngine = document.querySelector(".cars-engine");
+    const carsPowerEngine = document.querySelector(".cars-powerEngine");
+    const carsBanType = document.querySelector(".cars-banType");
+    const carsGearBox = document.querySelector(".cars-gearBox");
+    const carsTransmission = document.querySelector(".cars-transmission");
+    const carsColor = document.querySelector(".cars-color");
+    const carsFuelType = document.querySelector(".cars-fuelType");
+    const carsPrice = document.querySelector(".cars-price");
+    const aboutCar = document.querySelector(".about-car");
+    const carsId = document.querySelector(".cars-id");
+    const carousel = document.querySelector(".carousel");
+    const infoElementThree = document.querySelector(".info-element-three");
+
+    carMarka.textContent = carData.marka;
+    carModel.textContent = carData.model;
+    salerName.textContent = carData.salerName;
+    phoneNumber.textContent = carData.phoneNumber;
+    carDate.textContent = carData.date;
+    carsMarka.textContent = carData.marka;
+    carsModel.textContent = carData.model;
+    carsYear.textContent = carData.year;
+    carsMillage.textContent = carData.millage;
+    carsEngine.textContent = carData.engine;
+    carsPowerEngine.textContent = carData.horsePower;
+    carsBanType.textContent = carData.banType;
+    carsGearBox.textContent = carData.gearBox;
+    carsTransmission.textContent = carData.transmission;
+    carsColor.textContent = carData.color;
+    carsFuelType.textContent = carData.fuel;
+    carsPrice.textContent = carData.price;
+    aboutCar.textContent = carData.aboutCar;
+    carsId.textContent = carData.id;
+
+    carousel.innerHTML = "";
+    infoElementThree.innerHTML = "";
+
+    Object.keys(carData).forEach((key) => {
+      if (key.startsWith("image")) {
+        const imageSrc = carData[key];
+        const li = document.createElement("li");
+        li.className = "item";
+        const img = document.createElement("img");
+        img.alt = `Image for ${carData.marka} ${carData.model}`;
+        img.src = imageSrc;
+        li.appendChild(img);
+        carousel.appendChild(li);
+      } else if (key.startsWith("carTool")) {
+        const toolText = carData[key];
+        const li = document.createElement("li");
+        const p = document.createElement("p");
+        p.textContent = toolText;
+        li.appendChild(p);
+        infoElementThree.appendChild(li);
+      }
+    });
+
+    if (carousel.children.length > 0) {
+      carousel.children[0].classList.add("active");
+    }
+  } else {
+    console.log(`No data found for ${key}`);
+  }
 }
+updateCarDetails(1);

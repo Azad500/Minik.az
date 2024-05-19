@@ -687,6 +687,24 @@ nav .logo-mobile .user-in-desktop {
   font-size: 16px;
   font-weight: bold;
 }
+.add-button-element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.add-button-element button {
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #b0c;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.add-button-element button:hover {
+  background-color: rgb(201, 65, 213);
+}
 /* -------------------cards---------------- */
 .cards-container {
   width: 100%;

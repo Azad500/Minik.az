@@ -69,3 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+const userProfileDesktop = document.querySelector(".user-profile-desktop");

@@ -125,7 +125,7 @@
   .menu-list li:nth-child(3) a::after {
     width: var(--zero);
   }
-  .menu-list li:last-child a::after {
+  .menu-list li:nth-child(4) a::after {
     width: var(--zero);
   }
   .menu-list li a:hover::after {
@@ -325,6 +325,14 @@
   }
   .pictures-border div:first-child {
     min-width: 80%;
+  }
+  /* ----------add-button-------- */
+  .add-button-element {
+    justify-content: end;
+  }
+  .add-button-element button {
+    padding: 15px 100px;
+    font-size: 16px;
   }
   /* -------------------cards---------------- */
   .cards-container {
