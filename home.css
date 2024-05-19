@@ -718,6 +718,24 @@ nav .logo-mobile .user-in-desktop {
 .selected-container li:hover {
   transform: scale(1.05);
 }
+.card-image {
+  position: relative;
+}
+.card-crash,
+.card-rent {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+.card-rent {
+  background-color: rgb(234, 155, 8);
+}
 .cards-element li .card-image,
 .selected-container li .card-image {
   width: 250px;

@@ -1,3 +1,7 @@
+:root {
+  --font-family: "Poppins", sans-serif;
+  --zero: 0%;
+}
 @media screen and (min-width: 1024px) {
   /* --------------hamburger------------- */
   .hamburger-element i {
@@ -111,6 +115,18 @@
     left: 0;
     bottom: -10px;
     transition: 0.5s;
+  }
+  .menu-list li:first-child a::after {
+    width: var(--zero);
+  }
+  .menu-list li:nth-child(2) a::after {
+    width: var(--zero);
+  }
+  .menu-list li:nth-child(3) a::after {
+    width: var(--zero);
+  }
+  .menu-list li:last-child a::after {
+    width: var(--zero);
   }
   .menu-list li a:hover::after {
     width: 100%;

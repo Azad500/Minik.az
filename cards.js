@@ -3,10 +3,31 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       image: "./images/slider/slider1.png",
+      image1:
+        "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/1477bbe21e8d6b5e719c7c3ccab577fd47dd8cc3/photos/9W181GBK.tHIc0sXVw-(edit).jpg?t=163529869601",
+      image2:
+        "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/d9b636c2ec84ddc3bc7f2eb32861b39bdd5f9683/photos/rj78oYRx-R9U0TS2qOg-(edit).jpg?t=165776868052",
+      image3:
+        "https://cdn.bigboytoyz.com/new-version/products/product/2015-BMW-M4-Coupe-BLACk-23.jpg",
+      image4:
+        "https://cdn.bigboytoyz.com/new-version/products/product/2015-BMW-M4-Coupe-BLACk-24.jpg",
+      image5:
+        "https://i.pinimg.com/originals/d2/17/eb/d217eb7dcb3f35be2b50966af028df6a.jpg",
+      image6:
+        "https://www.westcoastexoticcars.com/imagetag/38/42/l/Used-2015-BMW-M4-1610046366.jpg",
       prices: "42000",
       price: "42 000 $",
       marka: "Bmw",
       model: "M4",
+      year: "2016",
+      millage: "54 000 km",
+      engine: "3.0 L",
+      horsePower: "400",
+      banType: "kupe",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Qara",
+      fuel: "Benzin",
       description: "2016, 3.0 L, 54 000 km",
       dates: "04.28.2024",
       date: "28.04.2024",
@@ -330,8 +351,198 @@ document.addEventListener("DOMContentLoaded", function () {
       dates: "03.11.2024",
       date: "11.03.2024",
     },
+    {
+      id: 31,
+      image: "./images/cards/card31.jpeg",
+      prices: "10000",
+      price: "10 000 $",
+      marka: "Hyundai",
+      model: "Sonata",
+      description: "2015, 2.0 L, 190 200 km",
+      dates: "02.19.2024",
+      date: "19.02.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 32,
+      image: "./images/cards/card32.jpeg",
+      prices: "14000",
+      price: "14 000 $",
+      marka: "Mercedes",
+      model: "E-Class",
+      description: "2016, 3.5 L, 220 000 km",
+      dates: "01.22.2024",
+      date: "22.01.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 33,
+      image: "./images/cards/card33.jpeg",
+      prices: "2000",
+      price: "2 000 $",
+      marka: "Lada",
+      model: "Vaz-2107",
+      description: "2005, 1.7 L, 234 000 km",
+      dates: "04.27.2024",
+      date: "27.04.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 34,
+      image: "./images/cards/card34.jpeg",
+      prices: "5000",
+      price: "5 000 $",
+      marka: "Kia",
+      model: "Optima",
+      description: "2013, 2.4 L, 134 000 km",
+      dates: "02.04.2024",
+      date: "04.02.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 35,
+      image: "./images/cards/card37.jpeg",
+      prices: "1500",
+      price: "1500 $",
+      marka: "Lada",
+      model: "Priora",
+      description: "2009, 1.6 L, 221 000 km",
+      dates: "11.05.2024",
+      date: "05.11.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 36,
+      image: "./images/cards/card38.jpeg",
+      prices: "11000",
+      price: "11 000 $",
+      marka: "Hyundai",
+      model: "Sonata",
+      description: "2013, 2.4 L, 111 000 km",
+      dates: "01.05.2024",
+      date: "05.01.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
+    {
+      id: 37,
+      image: "./images/cards/card39.jpeg",
+      prices: "5000",
+      price: "5 000 $",
+      marka: "Mercedes",
+      model: "E-Class",
+      description: "1998, 3.2 L, 341 000 km",
+      dates: "01.04.2024",
+      date: "04.01.2024",
+      crashed: true,
+      crash: "Qəzalı",
+    },
   ];
   cardsInformations.sort((a, b) => {
+    let d1 = new Date(a.dates);
+    let d2 = new Date(b.dates);
+    return d2 - d1;
+  });
+  const rentCar = [
+    {
+      id: 1,
+      image: "./images/cards/card35.jpeg",
+      prices: "30",
+      price: "30 AZN / Günlük",
+      marka: "Opel",
+      model: "Astra",
+      description: "2010, 1.8 L, Dizel",
+      dates: "05.08.2024",
+      date: "08.05.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 2,
+      image: "./images/cards/card36.jpeg",
+      prices: "150",
+      price: "150 AZN / Günlük",
+      marka: "Land Rover",
+      model: "Range Rover",
+      description: "2016, 5.0 L, Benzin",
+      dates: "04.12.2024",
+      date: "12.04.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 3,
+      image: "./images/cards/card40.jpeg",
+      prices: "100",
+      price: "100 AZN / Günlük",
+      marka: "BMW",
+      model: "5 series",
+      description: "2013, 2.0 L, Benzin",
+      dates: "04.22.2024",
+      date: "22.04.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 4,
+      image: "./images/cards/card41.jpeg",
+      prices: "70",
+      price: "70 AZN / Günlük",
+      marka: "Mercedes",
+      model: "E-Class",
+      description: "2011, 2.2 L, Dizel",
+      dates: "02.28.2024",
+      date: "28.02.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 5,
+      image: "./images/cards/card42.jpeg",
+      prices: "65",
+      price: "65 AZN / Günlük",
+      marka: "Hyundai",
+      model: "Elantra",
+      description: "2017, 2.0 L, Benzin",
+      dates: "02.28.2024",
+      date: "28.02.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 6,
+      image: "./images/cards/card43.jpeg",
+      prices: "160",
+      price: "160 AZN / Günlük",
+      marka: "Mercedes",
+      model: "V-Class",
+      description: "2021, 3.0 L, Benzin",
+      dates: "03.17.2024",
+      date: "17.03.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+    {
+      id: 6,
+      image: "./images/cards/card44.jpeg",
+      prices: "140",
+      price: "140 AZN / Günlük",
+      marka: "Toyota",
+      model: "Camry",
+      description: "2021, 2.5 L, Hibrid",
+      dates: "05.10.2024",
+      date: "10.05.2024",
+      rent: true,
+      rentCar: "Icarə",
+    },
+  ];
+
+  rentCar.sort((a, b) => {
     let d1 = new Date(a.dates);
     let d2 = new Date(b.dates);
     return d2 - d1;
@@ -341,20 +552,41 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardsElement = document.querySelector(".cards-element");
   const paginationControls = document.getElementById("pagination-controls");
 
+  let isCardClicked = false;
+  let isNewCardClicked = false;
+  let isCrashedCardClicked = false;
+  let isRentCardClicked = false;
   const recordsPerPage = 10;
   const numberOfPages = Math.ceil(cardsInformations.length / recordsPerPage);
+
+  const currentDate = new Date();
+
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 
   function renderCards(page) {
     const startIndex = (page - 1) * recordsPerPage;
     const endIndex = startIndex + recordsPerPage;
     const itemsToShow = cardsInformations.slice(startIndex, endIndex);
 
-    cardsElement.innerHTML = ""; // Clear existing cards
-    itemsToShow.forEach((card) => {
-      const cardElement = document.createElement("li");
-      cardElement.innerHTML = `
+    cardsElement.innerHTML = "";
+
+    if (isCardClicked) {
+      // ------------------all-cards------------------
+      const shuffledCards = shuffle([...cardsInformations]);
+      shuffledCards.forEach((card) => {
+        const cardElement = document.createElement("li");
+        cardElement.innerHTML = `
         <div class="card-image">
           <img src="${card.image}" alt="image ${card.id}" />
+          <p class="card-crash" ${card.crash ? "" : 'style="display: none;"'}>${
+          card.crash || ""
+        }</p>
         </div>
         <div class="card-text">
           <h3>${card.price}</h3>
@@ -366,19 +598,122 @@ document.addEventListener("DOMContentLoaded", function () {
           <span class="card-date">${card.date}</span>
         </div>
       `;
-      cardsElement.appendChild(cardElement);
-    });
+        cardsElement.appendChild(cardElement);
+      });
+    } else if (isNewCardClicked) {
+      // ------------------new-cards------------------
+      const sortedCards = cardsInformations.sort((a, b) => {
+        const dateA = new Date(a.dates);
+        const dateB = new Date(b.dates);
+        return Math.abs(currentDate - dateA) - Math.abs(currentDate - dateB);
+      });
+      const closestCards = sortedCards.slice(0, 15);
+      closestCards.forEach((card) => {
+        const cardElement = document.createElement("li");
+        cardElement.innerHTML = `
+          <div class="card-image">
+            <img src="${card.image}" alt="image ${card.id}" />
+            <p class="card-crash" ${
+              card.crash ? "" : 'style="display: none;"'
+            }>${card.crash || ""}</p>
+          </div>
+          <div class="card-text">
+            <h3>${card.price}</h3>
+            <div class="card-marka-model">
+              <p>${card.marka}</p>
+              <span>${card.model}</span>
+            </div>
+            <p>${card.description}</p>
+            <span class="card-date">${card.date}</span>
+          </div>
+        `;
+        cardsElement.appendChild(cardElement);
+      });
+    } else if (isCrashedCardClicked) {
+      // ------------------crash-cards------------------
+      const crashedCards = cardsInformations.filter(
+        (card) => card.crashed === true
+      );
+      crashedCards.forEach((card) => {
+        const cardElement = document.createElement("li");
+        cardElement.innerHTML = `
+          <div class="card-image">
+            <img src="${card.image}" alt="image ${card.id}" />
+            <p class="card-crash">${card.crash}</p>
+          </div>
+          <div class="card-text">
+            <h3>${card.price}</h3>
+            <div class="card-marka-model">
+              <p>${card.marka}</p>
+              <span>${card.model}</span>
+            </div>
+            <p>${card.description}</p>
+            <span class="card-date">${card.date}</span>
+          </div>
+        `;
+        cardsElement.appendChild(cardElement);
+      });
+    } else if (isRentCardClicked) {
+      // ------------------rent-cards------------------
+      rentCar.forEach((card) => {
+        const cardElement = document.createElement("li");
+        cardElement.innerHTML = `
+          <div class="card-image">
+            <img src="${card.image}" alt="image ${card.id}" />
+            <p class="card-rent">${card.rentCar}</p>
+          </div>
+          <div class="card-text">
+            <h3>${card.price}</h3>
+            <div class="card-marka-model">
+              <p>${card.marka}</p>
+              <span>${card.model}</span>
+            </div>
+            <p>${card.description}</p>
+            <span class="card-date">${card.date}</span>
+          </div>
+        `;
+        cardsElement.appendChild(cardElement);
+      });
+    } else {
+      // ------------------------------------
+      itemsToShow.forEach((card) => {
+        const cardElement = document.createElement("li");
+        cardElement.innerHTML = `
+        <div class="card-image">
+          <img src="${card.image}" alt="image ${card.id}" />
+          <p class="card-crash" ${card.crash ? "" : 'style="display: none;"'}>${
+          card.crash || ""
+        }</p>
+        </div>
+        <div class="card-text">
+          <h3>${card.price}</h3>
+          <div class="card-marka-model">
+            <p>${card.marka}</p>
+            <span>${card.model}</span>
+          </div>
+          <p>${card.description}</p>
+          <span class="card-date">${card.date}</span>
+        </div>
+      `;
+        cardsElement.appendChild(cardElement);
+        // ---------------------cards-click------------
+        cardElement.addEventListener("click", () => {
+          localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
+          window.open("cars.html", "_blank");
+        });
+      });
+    }
   }
 
   function renderPagination(currentPage) {
-    paginationControls.innerHTML = ""; // Clear existing pagination controls
+    paginationControls.innerHTML = "";
 
     for (let i = 1; i <= numberOfPages; i++) {
       const pageLink = document.createElement("button");
       pageLink.textContent = i;
       pageLink.className = "page-number";
       if (i === currentPage) {
-        pageLink.style.backgroundColor = "#b0c"; // Highlight the current page
+        pageLink.style.backgroundColor = "#b0c";
       }
       pageLink.addEventListener("click", () => {
         renderCards(i);
@@ -388,84 +723,185 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  renderCards(1); // Initial rendering for page 1
+  renderCards(1);
   renderPagination(1);
+
   // ------------------------all-cards--------------------
   const filterElement = document.querySelector(".filter-container");
   const sliderElement = document.querySelector(".slider-container");
-  const allCards = document.querySelectorAll(".all-cards");
+  const activeAllCArd = document.querySelector(".active-all-card");
+  const activeNewCArd = document.querySelector(".active-new-card");
+  const activeCrashCArd = document.querySelector(".active-crash-card");
+  const activeRentCArd = document.querySelector(".active-rent-card");
+  const hamburgerClosed = document.querySelector(".mobile-list");
 
-  allCards.forEach((card) => {
+  document.querySelectorAll(".all-cards").forEach((card) => {
     card.addEventListener("click", () => {
       filterElement.style.display = "none";
       sliderElement.style.display = "none";
+      paginationControls.style.display = "none";
+      isCardClicked = true;
+      isNewCardClicked = false;
+      isCrashedCardClicked = false;
+      isRentCardClicked = false;
+      renderCards(1);
+      activeAllCArd.style.setProperty("--zero", "100%");
+      activeNewCArd.style.setProperty("--zero", "0%");
+      activeCrashCArd.style.setProperty("--zero", "0%");
+      activeRentCArd.style.setProperty("--zero", "0%");
+      hamburgerClosed.style.display = "none";
+      document.body.style.overflow = "unset";
     });
   });
+
+  // --------------------new-cards-------------------
+  document.querySelectorAll(".new-cards").forEach((newCard) => {
+    newCard.addEventListener("click", () => {
+      filterElement.style.display = "none";
+      sliderElement.style.display = "none";
+      paginationControls.style.display = "none";
+      isNewCardClicked = true;
+      isCardClicked = false;
+      isCrashedCardClicked = false;
+      isRentCardClicked = false;
+      renderCards(1);
+      activeAllCArd.style.setProperty("--zero", "0%");
+      activeNewCArd.style.setProperty("--zero", "100%");
+      activeCrashCArd.style.setProperty("--zero", "0%");
+      activeRentCArd.style.setProperty("--zero", "0%");
+      hamburgerClosed.style.display = "none";
+      document.body.style.overflow = "unset";
+    });
+  });
+
+  // ------------------------crash-cards--------------------
+  document.querySelectorAll(".crash-cards").forEach((crashCard) => {
+    crashCard.addEventListener("click", () => {
+      filterElement.style.display = "none";
+      sliderElement.style.display = "none";
+      paginationControls.style.display = "none";
+      isCardClicked = false;
+      isNewCardClicked = false;
+      isCrashedCardClicked = true;
+      isRentCardClicked = false;
+      renderCards(1);
+      activeAllCArd.style.setProperty("--zero", "0%");
+      activeNewCArd.style.setProperty("--zero", "0%");
+      activeCrashCArd.style.setProperty("--zero", "100%");
+      activeRentCArd.style.setProperty("--zero", "0%");
+      hamburgerClosed.style.display = "none";
+      document.body.style.overflow = "unset";
+    });
+  });
+  // ------------------rent-cards-----------
+  document.querySelectorAll(".rent-cards").forEach((rentCard) => {
+    rentCard.addEventListener("click", () => {
+      filterElement.style.display = "none";
+      sliderElement.style.display = "none";
+      paginationControls.style.display = "none";
+      isCardClicked = false;
+      isNewCardClicked = false;
+      isCrashedCardClicked = false;
+      isRentCardClicked = true;
+      renderCards(1);
+      activeAllCArd.style.setProperty("--zero", "0%");
+      activeNewCArd.style.setProperty("--zero", "0%");
+      activeCrashCArd.style.setProperty("--zero", "0%");
+      activeRentCArd.style.setProperty("--zero", "100%");
+      hamburgerClosed.style.display = "none";
+      document.body.style.overflow = "unset";
+    });
+  });
+
   // ---------------refresh-page---------------
   const logoImage = document.querySelector(".logo-element-in-mobile img");
   logoImage.addEventListener("click", () => {
     location.reload();
   });
+  const logoMobile = document.querySelector(".logo-mobile img");
+  logoMobile.addEventListener("click", () => {
+    hamburgerClosed.style.display = "none";
+    document.body.style.overflow = "unset";
+  });
   // ------------------------select--------------------
   const markaContainer = [
     "Bütün Markalar",
-    "Bmw",
-    "Mercedes",
-    "Toyota",
-    "Lexus",
     "Audi",
+    "Bmw",
+    "Hyundai",
+    "Kia",
+    "Lada",
+    "Lexus",
+    "Mercedes",
     "Porsche",
+    "Toyota",
   ];
   const modelContainer = [
     {
       id: 1,
       marka: "Bmw",
-      model: ["Bütün Modellər", "M3", "M4", "M5", "X5", "X7"],
+      model: ["Bütün Modellər", "X5", "X7", "M3", "M4", "M5"],
     },
     {
       id: 2,
       marka: "Mercedes",
       model: [
         "Bütün Modellər",
+        "E-Class",
         "Cls 63 AMG",
+        "E 63 AMG",
         "G 63 AMG",
         "S 63 AMG",
-        "E 63 AMG",
       ],
     },
     {
       id: 3,
       marka: "Audi",
-      model: ["Bütün Modellər", "RS4", "RS5", "A6", "A7", "A8"],
+      model: ["Bütün Modellər", "A6", "A7", "A8", "RS4", "RS5"],
     },
     {
       id: 4,
       marka: "Toyota",
       model: [
         "Bütün Modellər",
+        "Camry",
         "Corolla",
         "Corolla Cross",
-        "Camry",
-        "Rav4",
         "Land Cruiser",
+        "Rav4",
       ],
     },
     {
       id: 5,
       marka: "Lexus",
-      model: ["Bütün Modellər", "LX450", "RX300", "LX570", "LX300", "RX330"],
+      model: ["Bütün Modellər", "LX300", "LX450", "LX570", "RX300", "RX330"],
     },
     {
       id: 6,
       marka: "Porsche",
       model: [
         "Bütün Modellər",
-        "Panamera",
-        "Cayenne",
-        "Macan",
-        "Cayman",
         "911",
+        "Cayenne",
+        "Cayman",
+        "Macan",
+        "Panamera",
       ],
+    },
+    {
+      id: 7,
+      marka: "Lada",
+      model: ["Bütün Modellər", "Vaz-2107", "Priora"],
+    },
+    {
+      id: 8,
+      marka: "Hyundai",
+      model: ["Bütün Modellər", "Sonata"],
+    },
+    {
+      id: 9,
+      marka: "Kia",
+      model: ["Bütün Modellər", "Optima"],
     },
   ];
   // --------marka---------
@@ -557,6 +993,7 @@ document.addEventListener("DOMContentLoaded", function () {
           cardsElement.style.display = "none";
           selectedContainer.appendChild(selectedLi);
           selectedContainer.style.display = "flex";
+          paginationContainer.style.display = "none";
         } else {
           cardsElement.style.display = "none";
         }
