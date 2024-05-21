@@ -1,9 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  function getCarIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get("id");
+  }
+
+  const carId = getCarIdFromUrl();
+  if (carId) {
+    updateCarDetails(carId, initializeCarousel);
+  } else {
+    console.log("No car ID found in the URL.");
+  }
+});
+
+function initializeCarousel() {
   let carousel = document.querySelector(".carousel");
   let items = carousel.querySelectorAll(".item");
   let dotsContainer = document.querySelector(".dots");
 
-  // Insert dots into the DOM
+  dotsContainer.innerHTML = "";
+
   items.forEach((_, index) => {
     let dot = document.createElement("span");
     dot.classList.add("dot");
@@ -14,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let dots = document.querySelectorAll(".dot");
 
-  // Function to show a specific item
   function showItem(index) {
     items.forEach((item, idx) => {
       item.classList.remove("active");
@@ -26,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event listeners for buttons
   document.querySelector(".prev").addEventListener("click", () => {
     let index = [...items].findIndex((item) =>
       item.classList.contains("active")
@@ -41,23 +54,25 @@ document.addEventListener("DOMContentLoaded", function () {
     showItem((index + 1) % items.length);
   });
 
-  // Event listeners for dots
   dots.forEach((dot) => {
     dot.addEventListener("click", () => {
       let index = parseInt(dot.dataset.index);
       showItem(index);
     });
   });
-});
-// ----------------------------------------------
+
+  // Ensure the first item is shown by default if there are items
+  if (items.length > 0) {
+    showItem(0);
+  }
+}
+
 document.querySelector(".phone-container").addEventListener("click", () => {
   document.querySelector(".blur-element").style.filter = "none";
 });
 
-// ----------localstorage-get-method---------
-
-function updateCarDetails(cardNumber) {
-  const key = `cardInfo-${cardNumber}`;
+function updateCarDetails(carId, callback) {
+  const key = `cardInfo-${carId}`;
 
   const carDataString = localStorage.getItem(key);
 
@@ -67,6 +82,7 @@ function updateCarDetails(cardNumber) {
     const carMarka = document.querySelector(".cars-name p:first-child");
     const carModel = document.querySelector(".cars-name p:last-child");
     const salerName = document.querySelector(".user-elements span");
+    const carsPrices = document.querySelector(".cars-prices");
     const phoneNumber = document.querySelector(".blur-element");
     const carDate = document.querySelector(".date");
     const carsMarka = document.querySelector(".cars-marka");
@@ -103,6 +119,7 @@ function updateCarDetails(cardNumber) {
     carsColor.textContent = carData.color;
     carsFuelType.textContent = carData.fuel;
     carsPrice.textContent = carData.price;
+    carsPrices.textContent = carData.price;
     aboutCar.textContent = carData.aboutCar;
     carsId.textContent = carData.id;
 
@@ -120,20 +137,15 @@ function updateCarDetails(cardNumber) {
         li.appendChild(img);
         carousel.appendChild(li);
       } else if (key.startsWith("carTool")) {
-        const toolText = carData[key];
-        const li = document.createElement("li");
-        const p = document.createElement("p");
-        p.textContent = toolText;
-        li.appendChild(p);
-        infoElementThree.appendChild(li);
+        // Populate car tools...
       }
     });
 
-    if (carousel.children.length > 0) {
-      carousel.children[0].classList.add("active");
+    // Initialize carousel after dynamic elements are added
+    if (typeof callback === "function") {
+      callback();
     }
   } else {
     console.log(`No data found for ${key}`);
   }
 }
-updateCarDetails(1);

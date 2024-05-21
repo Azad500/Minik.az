@@ -2,41 +2,33 @@ document.addEventListener("DOMContentLoaded", function () {
   let cardsInformations = [
     {
       id: 1,
-      image: "./images/slider/slider1.png",
-      image1:
-        "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/1477bbe21e8d6b5e719c7c3ccab577fd47dd8cc3/photos/9W181GBK.tHIc0sXVw-(edit).jpg?t=163529869601",
-      image2:
-        "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/d9b636c2ec84ddc3bc7f2eb32861b39bdd5f9683/photos/rj78oYRx-R9U0TS2qOg-(edit).jpg?t=165776868052",
-      image3:
-        "https://cdn.bigboytoyz.com/new-version/products/product/2015-BMW-M4-Coupe-BLACk-23.jpg",
-      image4:
-        "https://cdn.bigboytoyz.com/new-version/products/product/2015-BMW-M4-Coupe-BLACk-24.jpg",
-      image5:
-        "https://i.pinimg.com/originals/d2/17/eb/d217eb7dcb3f35be2b50966af028df6a.jpg",
-      image6:
-        "https://www.westcoastexoticcars.com/imagetag/38/42/l/Used-2015-BMW-M4-1610046366.jpg",
+      image: "./images/cars/nissansunny/sunny1.png",
+      image1: "./images/cars/nissansunny/sunny2.png",
+      image2: "./images/cars/nissansunny/sunny3.png",
+      image3: "./images/cars/nissansunny/sunny4.png",
+      image4: "./images/cars/nissansunny/sunny5.png",
+      image5: "./images/cars/nissansunny/sunny6.png",
       carTool1: "Yüngül lehimli disklər",
       carTool2: "Dəri salon",
       carTool3: "Mərkəzi qapanma",
       carTool4: "Oturacaqların ventilyasiyası",
       carTool5: "ABS",
       carTool6: "Park radarı",
-      prices: 42000,
-      price: "42 000 $",
-      marka: "Bmw",
-      model: "M4",
-      year: "2016",
-      millage: "54 000 km",
-      engine: "3.0 L",
-      horsePower: "400",
-      banType: "kupe",
-      gearBox: "avtomat",
-      transmission: "Arxa",
-      color: "Qara",
+      prices: 13500,
+      price: "13 500 AZN",
+      marka: "Nissan",
+      model: "Sunny",
+      year: "2013",
+      millage: "115 000 km",
+      engine: "1.2 L",
+      horsePower: "84",
+      banType: "sedan",
+      gearBox: "variator",
+      transmission: "Ön",
+      color: "Ağ",
       fuel: "Benzin",
-      description: "2016, 3.0 L, 54 000 km",
-      aboutCar:
-        "Servis mawinidir.Her bir weyi iwlekdir.Qiymete gore narahat etmeyin.Yoxlatdiqdan sonra ne xerci cixsa hemin xercin iki qati avtomobilin qoyulan qiymetinnen cixilacaq.",
+      description: "2013, 1.2 L, 115 000 km",
+      aboutCar: "Avtomobil əla vəziyyətdədir.hec bir problemi yoxdur.",
       salerName: "Emin",
       phoneNumber: "055 555 55 55",
       dates: "04.28.2024",
@@ -44,73 +36,69 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 2,
-      image: "./images/slider/slider2.png",
-      image1: "",
-      image2: "",
-      image3: "",
-      image4: "",
-      image5: "",
-      image6: "",
-      carTool1: "",
-      carTool2: "",
-      carTool3: "",
-      carTool4: "",
-      prices: 40000,
-      price: "40 000 $",
-      marka: "Mercedes",
-      model: "Cls 63 AMG",
-      year: "2014",
-      millage: "95 000 km",
-      engine: "5.5 L",
-      horsePower: "585",
-      banType: "sedan",
+      image: "./images/cars/bmwx5old/x51.png",
+      image1: "./images/cars/bmwx5old/x52.png",
+      image2: "./images/cars/bmwx5old/x53.png",
+      image3: "./images/cars/bmwx5old/x54.png",
+      image4: "./images/cars/bmwx5old/x55.png",
+      image5: "./images/cars/bmwx5old/x56.png",
+      image6: "./images/cars/bmwx5old/x57.png",
+      image7: "./images/cars/bmwx5old/x58.png",
+      image8: "./images/cars/bmwx5old/x59.png",
+      carTool1: "Yüngül lehimli disklər",
+      carTool2: "Dəri salon",
+      carTool3: "Mərkəzi qapanma",
+      carTool4: "Oturacaqların ventilyasiyası",
+      prices: 12000,
+      price: "12 000 AZN",
+      marka: "Bmw",
+      model: "X5",
+      year: "2000",
+      millage: "315 666 km",
+      engine: "4.4 L",
+      horsePower: "385",
+      banType: "offroader/suv",
       gearBox: "avtomat",
-      transmission: "Arxa",
-      color: "Ağ",
+      transmission: "Tam",
+      color: "Metallik",
       fuel: "Benzin",
-      description: "2014, 5.5 L, 95 000 km",
+      description: "2000, 4.4 L, 315 666 km",
       aboutCar:
-        "Geniş avtomobil çeşidi,keyfiyyətə zəmanət və rahat rəsmiləşdirmə. Bütun Avtomobillərə İST CARS-da baxa bilərsiniz . ORİJİNAL yürüşü və BOYASIZ olan avtomobilinizi satmaq ,barter etmək və ya satışa çıxarmaq istəyirsinizsə Bizə müraciət edə bilərsiniz !",
-      salerName: "Elmar",
+        "Salam şexsi masinimdi nomresiz satilir. Karopqada vurma gecikme yoxdu pec kondisoner sideniya qizdirici.paketler hamsi qaydasindadi Bele xadavoyunda citdi probem yoxdu otur sur masindi. Zehmet olmasa yigib 2020 aid suallar vermeyin.BMW den anlayiwi olanlar narahat etsin Teşekkurler",
+      salerName: "Eldar",
       phoneNumber: "055 555 55 55",
       dates: "04.22.2024",
       date: "22.04.2024",
     },
     {
       id: 3,
-      image: "./images/slider/slider3.png",
-      image1:
-        "https://i.pinimg.com/736x/37/a3/b3/37a3b37177eb9f3122a2e09f19d7c6dc.jpg",
-      image2:
-        "https://64.media.tumblr.com/10f3821b7526dfa51ed896c117add085/tumblr_pnyqebD0FS1qegypo_1280.jpg",
-      image3:
-        "https://64.media.tumblr.com/281db7e525973bdf651422b8bfb94b40/tumblr_po69mx3Ydo1qegypo_1280.jpg",
-      image4: "https://s1.dmcdn.net/v/SAhQu1X-ITTYiwkdR/x1080",
-      image5:
-        "https://www.quattroworld.com/wp-content/uploads/2014/12/news-audi-2015-rs-5-coupe-sport-edition-03.jpg",
-      image6:
-        "https://www.chicagomotorcars.com/imagetag/5909/13/l/Used-2015-Audi-RS5-quattro-S-tronic-Coupe-MSRP-78k-TECHNOLOGY-PACKAGE.jpg",
+      image: "./images/cars/hyundaisantafe/santafe1.png",
+      image1: "./images/cars/hyundaisantafe/santafe2.png",
+      image2: "./images/cars/hyundaisantafe/santafe3.png",
+      image3: "./images/cars/hyundaisantafe/santafe4.png",
+      image4: "./images/cars/hyundaisantafe/santafe5.png",
+      image5: "./images/cars/hyundaisantafe/santafe6.png",
+      image6: "./images/cars/hyundaisantafe/santafe7.png",
+      image7: "./images/cars/hyundaisantafe/santafe8.png",
       carTool1: "Park radarı",
-      carTool2: "Ksenon lampalar",
+      carTool2: "ABS",
       carTool3: "Kondisioner",
       carTool4: "Arxa görüntü kamerası",
       carTool5: "Yağış sensoru",
-      carTool6: "Oturacaqların isidilməsi",
-      carTool7: "ABS",
-      prices: 55000,
-      price: "55 000 $",
-      marka: "Audi",
-      model: "RS5",
-      year: "2015",
-      millage: "16 000 km",
-      engine: "3.0 L",
-      horsePower: "450",
-      banType: "kupe",
+      prices: 22000,
+      price: "22 000 AZN",
+      marka: "Hyundai",
+      model: "Santafe",
+      year: "2007",
+      millage: "200 000 km",
+      engine: "2.7 L",
+      horsePower: "201",
+      banType: "offroader/suv",
       gearBox: "avtomat",
-      transmission: "Arxa",
-      color: "Boz",
-      fuel: "Benzin",
-      description: "2015, 3.0 L, 16 000 km",
+      transmission: "Tam",
+      color: "Ağ",
+      fuel: "Dizel",
+      description: "2007, 2.7 L, 200 000 km",
       aboutCar:
         "Masin Tam ideal veziyyetdedir!Masinin elektron,mator karopka sisteminde hec bir problem yoxdur,Istenilen Yerde yoxlatdira bilersiz,Hal hazirda hec bir xerc teleb etmir. Masin tam FULL Komplektasiyadir.Masinda vuruq udar ve deyisen detal yoxdur. Masin tam olaraq Idealdir!",
       salerName: "Sahib",
@@ -120,122 +108,345 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 4,
-      image: "./images/slider/slider4.png",
-      prices: 172000,
-      price: "172 000 $",
-      marka: "Porsche",
-      model: "911",
-      description: "2020, 4.0 L, 32 000 km",
+      image: "./images/cars/hyundai30/i301.png",
+      image1: "./images/cars/hyundai30/i302.png",
+      image2: "./images/cars/hyundai30/i303.png",
+      image3: "./images/cars/hyundai30/i304.png",
+      image4: "./images/cars/hyundai30/i305.png",
+      image5: "./images/cars/hyundai30/i306.png",
+      image6: "./images/cars/hyundai30/i307.png",
+      image7: "./images/cars/hyundai30/i308.png",
+      image8: "./images/cars/hyundai30/i309.png",
+      image9: "./images/cars/hyundai30/i3010.png",
+      prices: 16000,
+      price: "16 000 AZN",
+      marka: "Hyundai",
+      model: "i30",
+      year: "2013",
+      millage: "212 000 km",
+      engine: "1.4 L",
+      horsePower: "150",
+      banType: "hetcbek",
+      gearBox: "mexanika",
+      transmission: "Ön",
+      color: "Qara",
+      fuel: "Benzin",
+      description: "2013, 1.4 L, 212 000 km",
+      aboutCar:
+        "Mator karopka sisteminde hec bir problem yoxdur,Istenilen Yerde yoxlatdira bilersiz,Hal hazirda hec bir xerc teleb etmir. Masin tam FULL Komplektasiyadir.Masinda vuruq udar ve deyisen detal yoxdur.",
+      salerName: "Sabir",
+      phoneNumber: "055 555 55 55",
       dates: "03.30.2024",
       date: "30.03.2024",
     },
     {
       id: 5,
-      image: "./images/slider/slider5.png",
-      prices: 135000,
-      price: "135 000 $",
+      image: "./images/cars/rav4old/rav4old1.png",
+      image1: "./images/cars/rav4old/rav4old2.png",
+      image2: "./images/cars/rav4old/rav4old3.png",
+      image3: "./images/cars/rav4old/rav4old4.png",
+      image4: "./images/cars/rav4old/rav4old5.png",
+      image5: "./images/cars/rav4old/rav4old6.png",
+      image6: "./images/cars/rav4old/rav4old7.png",
+      image7: "./images/cars/rav4old/rav4old8.png",
+      image8: "./images/cars/rav4old/rav4old9.png",
+      prices: 20000,
+      price: "20 000 $",
       marka: "Toyota",
-      model: "Land Cruiser",
-      description: "2023, 3.5 L, 0 km",
+      model: "Rav4",
+      year: "2015",
+      millage: "137 755 km",
+      engine: "2.5 L",
+      horsePower: "180",
+      banType: "offroader/suv",
+      gearBox: "avtomat",
+      transmission: "Tam",
+      color: "Ağ",
+      fuel: "Benzin",
+      description: "2015, 2.5 L, 137 755 km",
+      aboutCar:
+        "Maşın sinfinin ən full versiyasıdır(Limited version).Bütün funksiyaları işləkdir.Bu günə heç bir xərci yoxdur.Ehtiyac olduğu üçün dəyərindən ucuz satılır",
+      salerName: "Akif",
+      phoneNumber: "055 555 55 55",
       dates: "03.21.2024",
       date: "21.03.2024",
     },
     {
       id: 6,
-      image: "./images/slider/slider6.png",
-      prices: 98000,
-      price: "98 000 $",
-      marka: "Lexus",
-      model: "LX570",
-      description: "2020, 5.7 L, 110 000 km",
+      image: "./images/cars/prius30kuza/prius301.png",
+      image1: "./images/cars/prius30kuza/prius302.png",
+      image2: "./images/cars/prius30kuza/prius303.png",
+      image3: "./images/cars/prius30kuza/prius304.png",
+      image4: "./images/cars/prius30kuza/prius305.png",
+      image5: "./images/cars/prius30kuza/prius306.png",
+      image6: "./images/cars/prius30kuza/prius307.png",
+      image7: "./images/cars/prius30kuza/prius308.png",
+      prices: 14000,
+      price: "14 000 AZN",
+      marka: "Toyota",
+      model: "Prius",
+      year: "2009",
+      millage: "236 000 mil",
+      engine: "1.8 L",
+      horsePower: "110",
+      banType: "hetcbek",
+      gearBox: "variator",
+      transmission: "Ön",
+      color: "Qara",
+      fuel: "Hibrid",
+      description: "2009, 1.8 L, 236 000 mil",
+      aboutCar:
+        "Avtomobil haqqında məlumat.Qovanda yağ azalma var.Təcili satılır qiymət sondur",
+      salerName: "Azad",
+      phoneNumber: "055 555 55 55",
       dates: "04.11.2024",
       date: "11.04.2024",
     },
     {
       id: 7,
-      image: "./images/cards/card15.png",
-      prices: 250000,
-      price: "250 000 AZN",
-      marka: "Lexus",
-      model: "LX300",
-      description: "2024, 3.0 L, 0 km",
+      image: "./images/cars/sklassold/sklassold1.png",
+      image1: "./images/cars/sklassold/sklassold2.png",
+      image2: "./images/cars/sklassold/sklassold3.png",
+      image3: "./images/cars/sklassold/sklassold4.png",
+      image4: "./images/cars/sklassold/sklassold5.png",
+      image5: "./images/cars/sklassold/sklassold6.png",
+      image6: "./images/cars/sklassold/sklassold7.png",
+      image7: "./images/cars/sklassold/sklassold8.png",
+      image8: "./images/cars/sklassold/sklassold9.png",
+      image9: "./images/cars/sklassold/sklassold10.png",
+      prices: 74000,
+      price: "7400 AZN",
+      marka: "Mercedes-Benz",
+      model: "S-Class",
+      year: "2001",
+      millage: "300 000 km",
+      engine: "3.2 L",
+      horsePower: "250",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Metallik",
+      fuel: "Benzin",
+      description: "2001, 3.2 L, 300 000 km",
+      aboutCar: "Qiymət sondur",
+      salerName: "Xudaverdi",
+      phoneNumber: "055 555 55 55",
       dates: "04.01.2024",
       date: "01.04.2024",
     },
     {
       id: 8,
-      image: "./images/cards/card16.jpeg",
-      prices: "38000",
-      price: "38 000 $",
-      marka: "Lexus",
-      model: "RX300",
-      description: "2020, 3.0 L, 47 000 km",
+      image: "./images/cars/bmw528/bmw5281.png",
+      image1: "./images/cars/bmw528/bmw5282.png",
+      image2: "./images/cars/bmw528/bmw5283.png",
+      image3: "./images/cars/bmw528/bmw5284.png",
+      image4: "./images/cars/bmw528/bmw5285.png",
+      image5: "./images/cars/bmw528/bmw5286.png",
+      image6: "./images/cars/bmw528/bmw5287.png",
+      image7: "./images/cars/bmw528/bmw5288.png",
+      image8: "./images/cars/bmw528/bmw5289.png",
+      prices: 31000,
+      price: "31 000 AZN",
+      marka: "Bmw",
+      model: "5-series",
+      year: "2015",
+      millage: "195 000 km",
+      engine: "2.0 L",
+      horsePower: "230",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Qara",
+      fuel: "Benzin",
+      description: "2015, 2.0 L, 195 000 km",
+      aboutCar:
+        "KREDIT MÜMKÜNDÜR ILK ÖDƏNIŞ 10000 AZN.Öz aramızda banksız kredit mümkündür.95 lə sürurem motorun yağı bmw qrup tökülür.BEZKRASKA Özünə ideal F10 axtaranlar buyursun",
+      salerName: "Elnur",
+      phoneNumber: "055 555 55 55",
       dates: "04.17.2024",
       date: "17.04.2024",
     },
     {
       id: 9,
-      image: "./images/cards/card9.webp",
-      prices: 60000,
-      price: "60 000 $",
+      image: "./images/cars/bmw328old/bmw3281.png",
+      image1: "./images/cars/bmw328old/bmw3282.png",
+      image2: "./images/cars/bmw328old/bmw3283.png",
+      image3: "./images/cars/bmw328old/bmw3284.png",
+      prices: 5500,
+      price: "5500 AZN",
       marka: "Bmw",
       model: "X5",
-      description: "2020, 3.0 L, 52 000 km",
+      year: "1992",
+      millage: "360 000 km",
+      engine: "2.5 L",
+      horsePower: "200",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Metallik",
+      fuel: "Benzin",
+      description: "1992, 2.5 L, 360 000 km",
+      aboutCar:
+        "Kondisioner işləkdir,Motor karopka salamat vəziyyətdədir,Təcili satılır,Qiymətdə cuzi endirim olacaq",
+      salerName: "Nazim",
+      phoneNumber: "055 555 55 55",
       dates: "04.12.2024",
       date: "12.04.2024",
     },
     {
       id: 10,
-      image: "./images/cards/card10.jpeg",
-      prices: 83000,
-      price: "83 000 $",
-      marka: "Mercedes",
-      model: "G 63 AMG",
-      description: "2016, 5.5 L, 74 000 km",
+      image: "./images/cars/cruz/cruz1.png",
+      image1: "./images/cars/cruz/cruz2.png",
+      image2: "./images/cars/cruz/cruz3.png",
+      image3: "./images/cars/cruz/cruz4.png",
+      image4: "./images/cars/cruz/cruz5.png",
+      image5: "./images/cars/cruz/cruz6.png",
+      image6: "./images/cars/cruz/cruz7.png",
+      image7: "./images/cars/cruz/cruz8.png",
+      image8: "./images/cars/cruz/cruz9.png",
+      image9: "./images/cars/cruz/cruz10.png",
+      prices: 17000,
+      price: "17 000 AZN",
+      marka: "Chevrolet",
+      model: "Cruz",
+      year: "2017",
+      millage: "149 000 km",
+      engine: "1.4 L",
+      horsePower: "160",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Arxa",
+      color: "Metallik",
+      fuel: "Benzin",
+      description: "2017, 1.4 L, 149 000 km",
+      aboutCar:
+        "5000 km tamam olan kimi yagı dəyişdirilir Chevrolet servisdə. Karobkanın yagına kimi dəyişdirilib. 92 benzinlə rahat işləyir. Maşının heç bir problemi yoxdur. Otur sür maşındır. Təcili pul lazımdır ona görə satıram. 12000 azn nağd şəkildə 448 azndən 12 ay krediti qalıb. Real alıcıya biraz endirim ederem.",
+      salerName: "Nadir",
+      phoneNumber: "055 555 55 55",
       dates: "04.18.2024",
       date: "18.04.2024",
     },
     {
       id: 11,
-      image: "./images/cards/card6.jpeg",
-      prices: 110000,
-      price: "110 000 $",
-      marka: "Bmw",
-      model: "M5",
-      description: "2020, 4.4 L, 11 500 km",
+      image: "./images/cars/elantra/elantra1.png",
+      image1: "./images/cars/elantra/elantra2.png",
+      image2: "./images/cars/elantra/elantra3.png",
+      image3: "./images/cars/elantra/elantra4.png",
+      image4: "./images/cars/elantra/elantra5.png",
+      image5: "./images/cars/elantra/elantra6.png",
+      image6: "./images/cars/elantra/elantra7.png",
+      image7: "./images/cars/elantra/elantra8.png",
+      image8: "./images/cars/elantra/elantra9.png",
+      prices: 23800,
+      price: "23 800 AZN",
+      marka: "Hyundai",
+      model: "Elantra",
+      year: "2018",
+      millage: "61 000 mil",
+      engine: "2.0 L",
+      horsePower: "180",
+      banType: "sedan",
+      gearBox: "avtomat",
+      transmission: "Ön",
+      color: "Mavi",
+      fuel: "Benzin",
+      description: "2018, 2.0 L, 61 000 mil",
+      aboutCar:
+        "Sadə motor sadə karobkadır.Özüm üçün gətirmişəm pula ehtiyac olduğu üçün satılır.Heç bir problemi yoxdur",
+      salerName: "Nadim",
+      phoneNumber: "055 555 55 55",
       dates: "04.02.2024",
       date: "02.04.2024",
     },
     {
       id: 12,
-      image: "./images/cards/card5.jpeg",
-      prices: 42000,
-      price: "42 000 $",
-      marka: "Bmw",
-      model: "M3",
-      description: "2016, 3.0 L, 22 000 km",
+      image: "./images/cars/rangeroverold/rangerover1.png",
+      image1: "./images/cars/rangeroverold/rangerover2.png",
+      image2: "./images/cars/rangeroverold/rangerover3.png",
+      image3: "./images/cars/rangeroverold/rangerover4.png",
+      image4: "./images/cars/rangeroverold/rangerover5.png",
+      image5: "./images/cars/rangeroverold/rangerover6.png",
+      image6: "./images/cars/rangeroverold/rangerover7.png",
+      image7: "./images/cars/rangeroverold/rangerover8.png",
+      image8: "./images/cars/rangeroverold/rangerover9.png",
+      prices: 15300,
+      price: "15 300 AZN",
+      marka: "Land Rover",
+      model: "Range Rover",
+      year: "2003",
+      millage: "198 000 km",
+      engine: "4.4 L",
+      horsePower: "300",
+      banType: "offroader/suv",
+      gearBox: "avtomat",
+      transmission: "Tam",
+      color: "Qara",
+      fuel: "Benzin",
+      description: "2003, 4.4 L, 198 000 km",
+      aboutCar:
+        "Motor korobka ideal.Vuruq udar qəti yoxdur.Pnevmaları tam işlək.Salona yüngül əl gəzdirmək lazımdır",
+      salerName: "Afiq",
+      phoneNumber: "055 555 55 55",
       dates: "04.28.2024",
       date: "28.04.2024",
     },
     {
       id: 13,
-      image: "./images/cards/card4.jpeg",
-      prices: 150000,
-      price: "150 000 $",
-      marka: "Bmw",
-      model: "X7",
-      description: "2021, 3.0 L, 10 000 km",
+      image: "./images/cars/vito/vito1.png",
+      image1: "./images/cars/vito/vito2.png",
+      image2: "./images/cars/vito/vito3.png",
+      image3: "./images/cars/vito/vito4.png",
+      image4: "./images/cars/vito/vito5.png",
+      image5: "./images/cars/vito/vito6.png",
+      image6: "./images/cars/vito/vito7.png",
+      image7: "./images/cars/vito/vito8.png",
+      image8: "./images/cars/vito/vito9.png",
+      image9: "./images/cars/vito/vito10.png",
+      prices: 27000,
+      price: "27 000 AZN",
+      marka: "Mercedes-Benz",
+      model: "Vito",
+      year: "2007",
+      millage: "217 100 km",
+      engine: "2.2 L",
+      horsePower: "170",
+      banType: "minivan",
+      gearBox: "mexanika",
+      transmission: "Ön",
+      color: "Mavi",
+      fuel: "Dizel",
+      description: "2007, 2.2 L, 217 100 km",
+      aboutCar: "Təcili satılır!!!!",
+      salerName: "Qorxmaz",
+      phoneNumber: "055 555 55 55",
       dates: "04.10.2024",
       date: "10.04.2024",
     },
     {
       id: 14,
-      image: "./images/cards/card3.jpeg",
-      prices: 130000,
-      price: "130 000 $",
-      marka: "Mercedes",
-      model: "S 63 AMG",
-      description: "2017, 4.7 L, 98 000 km",
+      image: "./images/cars/ml/ml1.png",
+      image1: "./images/cars/ml/ml2.png",
+      image2: "./images/cars/ml/ml3.png",
+      image3: "./images/cars/ml/ml4.png",
+      image4: "./images/cars/ml/ml5.png",
+      image5: "./images/cars/ml/ml6.png",
+      prices: 12700,
+      price: "12 700 AZN",
+      marka: "Mercedes-Benz",
+      model: "Ml",
+      year: "2002",
+      millage: "267 000 km",
+      engine: "3.2 L",
+      horsePower: "220",
+      banType: "offroader/suv",
+      gearBox: "avtomat",
+      transmission: "Tam",
+      color: "Metallik",
+      fuel: "Benzin",
+      description: "2002, 3.2 L, 267 000 km",
+      aboutCar: "Təcili satılır.",
+      salerName: "Rafiq",
+      phoneNumber: "055 555 55 55",
       dates: "02.22.2024",
       date: "22.02.2024",
     },
@@ -664,9 +875,12 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
         cardsElement.appendChild(cardElement);
         // ---------------------cards-click------------
-        cardElement.addEventListener("click", () => {
+        cardElement.addEventListener("click", (e) => {
           localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-          window.open("cars.html", "_blank");
+          const url = new URL(window.location.href);
+          url.pathname = "cars.html";
+          url.searchParams.set("id", card.id);
+          window.open(url.toString(), "_blank");
         });
       });
     } else if (isNewCardClicked) {
@@ -698,9 +912,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         cardsElement.appendChild(cardElement);
         // ---------------------cards-click------------
-        cardElement.addEventListener("click", () => {
+        cardElement.addEventListener("click", (e) => {
           localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-          window.open("cars.html", "_blank");
+          const url = new URL(window.location.href);
+          url.pathname = "cars.html";
+          url.searchParams.set("id", card.id);
+          window.open(url.toString(), "_blank");
         });
       });
     } else if (isCrashedCardClicked) {
@@ -727,9 +944,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         cardsElement.appendChild(cardElement);
         // ---------------------cards-click------------
-        cardElement.addEventListener("click", () => {
+        cardElement.addEventListener("click", (e) => {
           localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-          window.open("cars.html", "_blank");
+          const url = new URL(window.location.href);
+          url.pathname = "cars.html";
+          url.searchParams.set("id", card.id);
+          window.open(url.toString(), "_blank");
         });
       });
     } else if (isRentCardClicked) {
@@ -753,9 +973,12 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         cardsElement.appendChild(cardElement);
         // ---------------------cards-click------------
-        cardElement.addEventListener("click", () => {
+        cardElement.addEventListener("click", (e) => {
           localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-          window.open("cars.html", "_blank");
+          const url = new URL(window.location.href);
+          url.pathname = "cars.html";
+          url.searchParams.set("id", card.id);
+          window.open(url.toString(), "_blank");
         });
       });
       // handleAboutUsers;
@@ -765,7 +988,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardElement = document.createElement("li");
         cardElement.innerHTML = `
         <div class="card-image">
-          <img src="${card.image}" alt="image ${card.id}" />
+          <img data=${card.id}  src="${card.image}" alt="image ${card.id}" />
           <p class="card-crash" ${card.crash ? "" : 'style="display: none;"'}>${
           card.crash || ""
         }</p>
@@ -782,9 +1005,12 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
         cardsElement.appendChild(cardElement);
         // ---------------------cards-click------------
-        cardElement.addEventListener("click", () => {
+        cardElement.addEventListener("click", (e) => {
           localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-          window.open("cars.html", "_blank");
+          const url = new URL(window.location.href);
+          url.pathname = "cars.html";
+          url.searchParams.set("id", card.id);
+          window.open(url.toString(), "_blank");
         });
       });
     }
@@ -913,11 +1139,13 @@ document.addEventListener("DOMContentLoaded", function () {
     "Bütün Markalar",
     "Audi",
     "Bmw",
+    "Chevrolet",
     "Hyundai",
     "Kia",
     "Lada",
     "Lexus",
-    "Mercedes",
+    "Mercedes-Benz",
+    "Nissan",
     "Porsche",
     "Toyota",
   ];
@@ -925,11 +1153,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       marka: "Bmw",
-      model: ["Bütün Modellər", "X5", "X7", "M3", "M4", "M5"],
+      model: ["Bütün Modellər", "5-series", "X5", "X7", "M3", "M5"],
     },
     {
       id: 2,
-      marka: "Mercedes",
+      marka: "Mercedes-Benz",
       model: [
         "Bütün Modellər",
         "E-Class",
@@ -937,6 +1165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "E 63 AMG",
         "G 63 AMG",
         "S 63 AMG",
+        "S-Class",
       ],
     },
     {
@@ -954,6 +1183,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Corolla Cross",
         "Land Cruiser",
         "Rav4",
+        "Prius",
       ],
     },
     {
@@ -963,30 +1193,33 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 6,
-      marka: "Porsche",
-      model: [
-        "Bütün Modellər",
-        "911",
-        "Cayenne",
-        "Cayman",
-        "Macan",
-        "Panamera",
-      ],
+      marka: "Lexus",
+      model: ["Bütün Modellər", "LX300", "LX450", "LX570", "RX300", "RX330"],
     },
     {
       id: 7,
+      marka: "Nissan",
+      model: ["Bütün Modellər", "Sunny"],
+    },
+    {
+      id: 8,
       marka: "Lada",
       model: ["Bütün Modellər", "Vaz-2107", "Priora"],
     },
     {
-      id: 8,
+      id: 9,
       marka: "Hyundai",
-      model: ["Bütün Modellər", "Sonata"],
+      model: ["Bütün Modellər", "Sonata", "Santafe", "i30", "Elantra"],
     },
     {
-      id: 9,
+      id: 10,
       marka: "Kia",
       model: ["Bütün Modellər", "Optima"],
+    },
+    {
+      id: 11,
+      marka: "Chevrolet",
+      model: ["Bütün Modellər", "Cruz"],
     },
   ];
   // --------marka---------
@@ -1084,9 +1317,12 @@ document.addEventListener("DOMContentLoaded", function () {
           selectedContainer.style.display = "flex";
           paginationContainer.style.display = "none";
           // ---------------------cards-click------------
-          selectedLi.addEventListener("click", () => {
+          selectedLi.addEventListener("click", (e) => {
             localStorage.setItem(`cardInfo-${card.id}`, JSON.stringify(card));
-            window.open("cars.html", "_blank");
+            const url = new URL(window.location.href);
+            url.pathname = "cars.html";
+            url.searchParams.set("id", card.id);
+            window.open(url.toString(), "_blank");
           });
         } else {
           cardsElement.style.display = "none";
