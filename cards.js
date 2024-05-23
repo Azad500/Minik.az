@@ -1472,7 +1472,6 @@ document.addEventListener("DOMContentLoaded", function () {
           window.open(url.toString(), "_blank");
         });
       });
-      // handleAboutUsers;
     } else {
       // ------------------------------------
       itemsToShow.forEach((card) => {
