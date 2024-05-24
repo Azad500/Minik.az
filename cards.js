@@ -1766,22 +1766,25 @@ document.addEventListener("DOMContentLoaded", function () {
         Number.MAX_SAFE_INTEGER;
       const selectedMarka = markaElement.value;
       const selectedModel = modelElement.value;
+      const filteredCards = cardsInformations.filter((card) => {
+        const cardPrice = parseInt(card.prices, 10);
+        return cardPrice >= priceMin && cardPrice <= priceMax;
+      });
+
+      cardsInformations = filteredCards;
       selectedContainer.innerHTML = "";
       cardsInformations.forEach((card) => {
-        const cardPrice = parseInt(card.prices, 10);
         if (
           (card.marka === selectedMarka && card.model === selectedModel) ||
-          (card.marka === selectedMarka &&
-            selectedModel === "Bütün Modellər") ||
-          (card.marka === selectedMarka &&
-            card.model === selectedModel &&
-            priceMin <= cardPrice &&
-            priceMax >= cardPrice)
+          (card.marka === selectedMarka && selectedModel === "Bütün Modellər")
         ) {
           const selectedLi = document.createElement("li");
           selectedLi.innerHTML = `
           <div class="card-image">
             <img src="${card.image}" alt="image ${card.id}" />
+            <p class="card-crash" ${
+              card.crash ? "" : 'style="display: none;"'
+            }>${card.crash || ""}</p>
           </div>
           <div class="card-text">
             <h3>${card.price}</h3>
@@ -1815,6 +1818,31 @@ document.addEventListener("DOMContentLoaded", function () {
           selectedContainer.style.display = "none";
           cardsElement.style.display = "flex";
           paginationContainer.style.display = "flex";
+        }
+        if (
+          markaElement.value === "Bütün Markalar" &&
+          modelElement.value === "Bütün Modellər" &&
+          priceMin <= card.prices &&
+          priceMax >= card.prices
+        ) {
+          const selectedLi = document.createElement("li");
+          selectedLi.innerHTML = `
+          <div class="card-image">
+            <img src="${card.image}" alt="image ${card.id}" />
+            <p class="card-crash" ${
+              card.crash ? "" : 'style="display: none;"'
+            }>${card.crash || ""}</p>
+          </div>
+          <div class="card-text">
+            <h3>${card.price}</h3>
+            <div class="card-marka-model">
+              <p>${card.marka}</p>
+              <span>${card.model}</span>
+            </div>
+            <p>${card.description}</p>
+            <span class="card-date">${card.date}</span>
+          </div>
+        `;
         }
       });
     })
